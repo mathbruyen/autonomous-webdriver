@@ -1,0 +1,24 @@
+{
+  "name": "autonomous-webdriver",
+  "version": "0.0.0",
+  "description": "Tests based on selenium without starting a server",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mathbruyen/autonomous-webdriver.git"
+  },
+  "author": "Mathieu Bruyen <code@mais-h.eu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mathbruyen/autonomous-webdriver/issues"
+  },
+  "homepage": "https://github.com/mathbruyen/autonomous-webdriver",
+  "devDependencies": {
+    "gulp": "~3.6.1",
+    "gulp-jshint": "~1.5.3",
+    "gulp-mocha": "~0.4.1"
+  }
+}
