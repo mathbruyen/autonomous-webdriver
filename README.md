@@ -24,10 +24,11 @@ return server.start().then(function () {
   // get a fresh driver
   var driver = server.newDriver();
 
-  // execute your test, do not forget to return a promise for the server to be shutdown only after the test
+  // execute your test
   driver.get('http://www.google.com');
   var searchBox = driver.findElement(webdriver.By.name('q'));
   searchBox.sendKeys('webdriver');
+  // do not forget to return a promise for the server to be shutdown only after the test
   return searchBox.getAttribute('value').then(function(value) {
     assert.equal(value, 'webdriver');
   });
@@ -38,7 +39,7 @@ return server.start().then(function () {
 
 Using [Mocha 1.18.0+](http://visionmedia.github.io/mocha/), one can use `before`/`after` and leverage promises:
 
-```
+```js
 var aw = require('autonomous-webdriver');
 var server = aw.newServer();
 var webdriver = aw.webdriver;
