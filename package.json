@@ -20,5 +20,10 @@
     "gulp": "~3.6.1",
     "gulp-jshint": "~1.5.3",
     "gulp-mocha": "~0.4.1"
+  },
+  "dependencies": {
+    "phantomjs": "~1.9.7-3",
+    "q": "~1.0.1",
+    "selenium-webdriver": "~2.41.0"
   }
 }

@@ -1,0 +1,26 @@
+{
+  "curly" : true,
+  "bitwise" : true,
+  "camelcase" : true,
+  "eqeqeq" : true,
+  "forin" : true,
+  "immed" : true,
+  "indent" : 2,
+  "latedef" : true,
+  "newcap" : true,
+  "noarg" : true,
+  "noempty" : true,
+  "nonbsp" : true,
+  "nonew" : true,
+  "quotmark" : "single",
+  "undef" : true,
+  "unused" : true,
+  "strict" : true,
+  "trailing" : true,
+  "maxlen" : 120,
+  "globals" : {
+    "require" : false,
+    "setTimeout" : false,
+    "module" : false
+  }
+}
