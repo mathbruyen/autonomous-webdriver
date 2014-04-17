@@ -1,6 +1,6 @@
 {
   "name": "autonomous-webdriver",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Tests based on selenium without starting a server",
   "main": "src/index.js",
   "scripts": {
