@@ -6,11 +6,18 @@
 
   // Test HTTP server
   var http = require('http');
-  var server = http.createServer(function (request, response) {
-    response.writeHead(200, { 'Content-Type' : 'text/html' });
-    response.end('<div id="foo">Hello World!</div>\n');
+  var server;
+
+  before(function (done) {
+    server = http.createServer(function (request, response) {
+      response.writeHead(200, { 'Content-Type' : 'text/html' });
+      response.end('<div id="foo">Hello World!</div>\n');
+    });
+    server.listen(8000, done);
   });
-  server.listen(8000);
+  after(function (done) {
+    server.close(done);
+  });
 
   describe('autonomous-webdriver', function () {
 
