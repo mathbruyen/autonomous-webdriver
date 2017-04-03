@@ -37,7 +37,7 @@ return server.start().then(function () {
 }).then(server.stop, server.stop);
 ```
 
-Using [Mocha 1.18.0+](http://visionmedia.github.io/mocha/), one can use `before`/`after` and leverage promises:
+Using [Mocha 1.18.0+](http://mochajs.org/), one can use `before`/`after` and leverage promises:
 
 ```js
 var aw = require('autonomous-webdriver');
